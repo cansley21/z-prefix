@@ -1,8 +1,8 @@
 import { useEffect, useContext, createContext } from "react"
-import MenuBar from "./Menubar"
+// import MenuBar from "./Menubar"
 import { useNavigate } from 'react-router-dom';
-import { DescriptiveDiv, OfficialButton, LogoutButton } from "./Styled";
-import './Homepage.css'; 
+// import { DescriptionDiv, OfficialButton, LogoutButton } from "./Styled";
+// import './Homepage.css'; 
 import { AppContext } from "./App";
 
 const HomepageContext = createContext();
@@ -80,7 +80,7 @@ export default function Homepage() {
                 <LogoutButton onClick={() => logout()}>{sessionStorage.getItem('username') !== null ? 'Logout' : 'Login'}</LogoutButton>
             </div>
             </div>
-            <MenuBar />
+            {/* <MenuBar /> */}
             <div className="main-section">
                 <div className="resource-section">
                     {filter.length ? filter.map((resource, index) => {

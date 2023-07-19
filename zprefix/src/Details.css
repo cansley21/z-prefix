@@ -1,0 +1,188 @@
+.details-section {
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+.details-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    background: white;
+}
+
+.details-info {
+    margin-left: 30px;
+    width: 50vw;
+}
+
+.details-link {
+    margin: 10px;
+    background-color: navy;
+    width: max-content;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.org {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.org-span {
+    font-weight: bold;
+    color: lightgray;
+}
+
+.org-link {
+    margin: 10px;
+    background-color: navy;
+    width: max-content;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.org-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.details-link > a {
+    text-decoration: none;
+    color: white;
+}
+
+.comment-input {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    background: lightblue;
+    border-radius: 5px;
+}
+
+.comment-input:hover {
+    opacity: 80%;
+}
+
+.comment-id {
+    display:flex;
+    align-items: center;
+}
+
+.comment-id > div {
+    margin-left: 10px;
+}
+
+.comment-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-button {
+    margin-left: 10px;
+    height: 50px;
+}
+
+.comment-box {
+    margin: 10px;
+}
+
+.posted-comment {
+    display:flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.rating-icon {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.star-box {
+    height: 40px;
+}
+
+.user-icon {
+    width: 40px;
+}
+
+.rating-box {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rating-icon-top {
+    display: inline-flex;
+    width: 150px;
+}
+
+.star1 {
+    position: relative;
+    top: -27px;
+    left: 11px;
+    width: 10px;
+    color: transparent;
+}
+
+.star1:hover {
+    cursor: pointer;
+}
+
+.star2 {
+    position: relative;
+    top: -50px;
+    left: 41px;
+    width: 10px;
+    color: transparent;
+}
+
+.star2:hover {
+    cursor: pointer;
+}
+
+.star3 {
+    position: relative;
+    top: -74px;
+    left: 71px;
+    width: 10px;
+    color: transparent;
+}
+
+.star3:hover {
+    cursor: pointer;
+}
+
+.star4 {
+    position: relative;
+    top: -98px;
+    left: 100px;
+    width: 10px;
+    color: transparent;
+}
+
+.star4:hover {
+    cursor: pointer;
+}
+
+.star5 {
+    position: relative;
+    top: -123px;
+    left: 130px;
+    width: 10px;
+    color: transparent;
+}
+
+.star5:hover {
+    cursor: pointer;
+}
