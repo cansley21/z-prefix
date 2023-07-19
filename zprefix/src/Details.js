@@ -23,17 +23,17 @@ export default function Details() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:8081/organization')
+    fetch('http://localhost:3000/organization')
       .then(res => res.json())
       .then(data => {
         setOrganizations(data);
       })
-    fetch('http://localhost:8081/feedback')
+    fetch('http://localhost:3000/feedback')
       .then(res => res.json())
       .then(data => {
         setFeedback(data.reverse());
       })
-    fetch('http://localhost:8081/users')
+    fetch('http://localhost:3000/users')
       .then(res => res.json())
       .then(data => {
         setUsersInfo(data);
@@ -68,11 +68,11 @@ export default function Details() {
           'comment': `${comment}`
         })
       }
-      fetch('http://localhost:8081/feedback', opt)
+      fetch('http://localhost:3000/feedback', opt)
         .then(res => res.status)
         .then(data => {
           if (data === 201) {
-            fetch('http://localhost:8081/feedback')
+            fetch('http://localhost:3000/feedback')
               .then(res => res.json())
               .then(data => {
                 setFeedback(data.reverse());

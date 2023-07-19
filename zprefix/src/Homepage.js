@@ -1,7 +1,7 @@
 import { useEffect, useContext, createContext } from "react"
 // import MenuBar from "./Menubar"
 import { useNavigate } from 'react-router-dom';
-// import { DescriptionDiv, OfficialButton, LogoutButton } from "./Styled";
+import { DescriptionDiv, OfficialButton, LogoutButton } from "./Styled";
 // import './Homepage.css'; 
 import { AppContext } from "./App";
 
@@ -49,7 +49,7 @@ export default function Homepage() {
     const { resources, setResources, setDetails, filter, setFilter, setAffil } = useContext(AppContext);
 
     useEffect(() => {
-        fetch('http://localhost:8081/resources')
+        fetch('http://localhost:3000/resources')
         .then(res => res.json())
         .then(data => {
             setAffil(data);
