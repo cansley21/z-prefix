@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { alertFunction } from "./Homepage";
+import { Link, useNavigate } from "react-router-dom";
+// import axios from 'axios';
+import './Login.css';
+import { alertFunction } from "./HomepageNew";
 
 export const Login =  (props) => {
     const [username, setUsername] = useState ('');
@@ -10,6 +12,8 @@ export const Login =  (props) => {
     const handleSubmit = async (e) => {
 
         e.preventDefault();
+        
+
         console.log('Submitting login form');
         try {
             const response = await fetch('http:localhost:3000/login', {
@@ -45,6 +49,7 @@ export const Login =  (props) => {
         <div className="alert alert-danger alert-dismissible fade show" role="alert"></div>
         <div className="alert alert-danger alert-dismissible fade show" role="alert"></div>
         <div className="auth-form-continer">
+            <Link to="/new">CLICK HERE TO GO HOME</Link>
             <h1> Who wants some inventory?!</h1>
             <h2>Inventory Managers Login Here!</h2>
             <form className="login-form" onSubmit={handleSubmit}>

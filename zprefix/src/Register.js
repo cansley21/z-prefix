@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {alertWarning, alertSuccess} from "./Homepage";
+// import {alertWarning, alertSuccess} from "./Homepage";
 
 export const Register = (props) => {
     const [email, setEmail] = useState('');
@@ -27,10 +27,10 @@ export const Register = (props) => {
                     sessionStorage.setItem('userID', data.user_id);
                     sessionStorage.setItem('username', username);
                     navigate('/resources');
-                    alertSuccess(data.message);
+                    // alertSuccess(data.message);
                 } else {
                     console.log(data.message)
-                    alertWarning(data.message);
+                    // alertWarning(data.message);
                 }
             } else {
                 console.log('Login Failed!');

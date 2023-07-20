@@ -2,8 +2,11 @@ import React, {useState, createContext} from 'react';
 import './App.css'
 import {LoginForm} from './LoginForm';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-import Homepage from './Homepage.js';
-import Details from './Details.js';
+import HomepageNew from './HomepageNew';
+import Navbar from './Navbar'
+import Fruitpage from './Fruitpage';
+
+
 
 
 export const AppContext = createContext();
@@ -31,10 +34,11 @@ export default function App() {
       setAffil
     }}>
       <Router>
+      <Navbar />
         <Routes>
           <Route path='/' element={<LoginForm />}></Route>
-          <Route path='/resources' element={<Homepage />}></Route>
-          <Route path='/resources/:id' element={<Details />}></Route>
+          <Route path='/new' element={<HomepageNew />}></Route>
+          <Route path='/fruit' element={<Fruitpage />}></Route>
         </Routes>
       </Router>
     </AppContext.Provider>
