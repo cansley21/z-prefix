@@ -12,7 +12,7 @@ exports.up = function(knex) {
     table.string('password');
   })
 
-  .createTable('items' table => {
+  .createTable('items', table => {
     table.increments('id').primary();
     table.integer('user_id').unsigned();
     table.foreign('user_id').references(user.id);
@@ -29,5 +29,7 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  
+    return knex.schema
+    .dropTableIfExists('items')
+    .dropTableIfExists('user')
 };
