@@ -6,9 +6,12 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'postgresql',
     connection: {
-      filename: './dev.sqlite3'
+      host: '127.0.0.1',
+      password: 'docker',
+      user: 'postgres',
+      port: 5432
     }
   },
 
