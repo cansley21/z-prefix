@@ -1,35 +1,28 @@
 import React from "react"
 // import Navbar from "./Navbar"
+import './HomepageNew.css'
 
 
 const HomepageNew = () => {
 
     return (
-        <div>
-            <p>HOW ABOUT THEM APPLES</p>
-            <p> </p>
+      <>
+      <div className="Apple"> 
+      <img src="https://t4.ftcdn.net/jpg/05/25/30/71/360_F_525307190_16TB4HM5SngbgUldEroyaAix86nKYX5r.jpg"></img>
+      </div>
+      <div> 
+      <input className="e-input e-large" type="text" placeholder="Enter Name" value="HOW ABOUT THEM APPLES! These bad boys will bring you to another world full
+            of flavor and jucyness you've never known!" readOnly={true}/>
+      </div>
+        <div className="text">
+            ^^ Swipe me
         </div>
+        <input className="e-input e-large" type="text" placeholder="How many you want?" readOnly={false}/>
+        <button type="Submit">Ordernow!</button>
+        </>
     )
 }
 
-// const Navbar() {
-//   return (
-//     <nav className="nav">
-//       <a href ="/" className="site-title">
-//         HOW ABOUT THEM APPLES!
-//       </a>
-//       <ul>
-//         <li>
-//           <a href="/pricing">Price</a>
-//         </li>
-//         <li>
-//           <a href="/about"> About Them Fruits </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   )
-
-// }
 
 
 export const alertFunction = (message) => {

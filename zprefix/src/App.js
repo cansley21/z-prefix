@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import HomepageNew from './HomepageNew';
 import Navbar from './Navbar'
 import Fruitpage from './Fruitpage';
+import Pricing from './Pricing';
+import Information from './Information';
 
 
 
@@ -39,6 +41,8 @@ export default function App() {
           <Route path='/' element={<LoginForm />}></Route>
           <Route path='/new' element={<HomepageNew />}></Route>
           <Route path='/fruit' element={<Fruitpage />}></Route>
+          <Route path='/information' element={<Information />}></Route>
+          <Route path='/pricing' element={<Pricing />}></Route>
         </Routes>
       </Router>
     </AppContext.Provider>

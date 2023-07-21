@@ -11,7 +11,7 @@ const handleClick = () => setClick(!click);
     return (
       <nav className='nav'>
         <Link to='/Fruitpage' className='site-title'>
-          all about fruit
+          All about fruit
         </Link>
         <ul>
           <CustomLink to="/pricing">How much this fruit cost?</CustomLink>

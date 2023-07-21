@@ -1,33 +1,19 @@
 import React from "react"
-import Navbar from "./Navbar"
+// import Navbar from "./Navbar"
 
 
 const Fruitpage = () => {
 
     return (
-        <div>
-            <Navbar />
-            <p>I would like this to work please</p>
+        <>
+        <div className="Apple"> 
+      <img src="https://t4.ftcdn.net/jpg/05/25/30/71/360_F_525307190_16TB4HM5SngbgUldEroyaAix86nKYX5r.jpg"></img>
         </div>
+        </>
     )
 }
 
-// const Navbar() {
-//   return (
-//     <nav className="nav">
-//       <a href ="/new" className="site-title">
-//         HOW ABOUT THEM APPLES!
-//       </a>
-//       <ul>
-//         <li>
-//           <a href="/pricing">Price</a>
-//         </li>
-//         <li>
-//           <a href="/about"> About Them Fruits </a>
-//         </li>
-//       </ul>
-//     </nav>
-  
+
 
 
   
